@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style type="text/css" media="screen">
+		html,input{
+		background-color: black;
+		color: white;
+			}
+		</style>
+		<script type="text/javascript">
+			
+		function tellTime() {
+		var out="";
+		//crea un objeto de tipo Fecha
+		//llamado now
+			var now = new Date();
+
+			//obtiene la parte DIA de la fecha
+
+		out=out+"<br>Dia: "+now.getDate();
+			//obtiene la parte MES de la fecha
+			//nota: los meses inician con 0
+			//asi que serian del 0 al 11 (desde 0 hasta n-1)
+			//donde 0 es enero y 11 diciembre
+
+		out=out+"<br>Mes: "+now.getMonth();
+			//obtiene la parte AÑO de la fecha
+
+		out=out+"<br>Año: "+now.getFullYear();
+
+			//obtiene la parte HORAS de la fecha
+		out=out+"<br>Horas: "+now.getHours();
+
+			//obtiene la parte MINUTOS de la fecha
+		out=out+"<br>Minutos: "+now.getMinutes();
+
+			//obtiene la parte SEGUNDOS de la fecha
+		out=out+"<br>Segundos: "+now.getSeconds();
+		//inserta los valores anteriores en el contenedor div1
+		document.getElementById("div1").innerHTML=out;
+		}
+		</script>
+	</head>
+	<!--llama a la funcion tellTime cada 1000 milisegunds = 1 segundo-->
+	<body onload="setInterval(tellTime,1000);">
+		
+		La fecha y hora actual es:<br>
+		<div id="div1">
+		</div>
+		<script type="text/javascript">
+			tellTime();
+			//recarga la pagina
+			//se usaba en la etiqueta body para recargar la pagina cada segundo
+			//se optimizo llamando a la funcion cada segundo en lugar de recargar
+			function recarga () {
+				location.reload();
+			}
+			
+		</script>
+		<!-- boton que recargaba la pagina, ya no se utiliza-->
+		<input type="button" onclick="" value="Refrescar">
+	</body>
+</html>

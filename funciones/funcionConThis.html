@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<script type="text/javascript">
+			
+		function buttonReport(btnId,btnName,btnValue) {
+		// body...
+		var usrMes1="Button id: "+btnId+"\n";
+		var usrMes2="Button name: "+btnName+"\n";
+		var usrMes3="Button value: "+btnValue+"\n";
+		alert(usrMes1+usrMes2+usrMes3);
+		}
+		</script>
+	</head>
+	<body>
+		<input type="button" name="Left Hand Button" id="1" value="Left"
+		onclick="buttonReport(this.id,this.name,this.value);">
+		<input type="button" name="Center Hand Button" id="2" value="Center"
+		onclick="buttonReport(this.id,this.name,this.value);">
+		<input type="button" name="Right Hand Button" id="3" value="Right"
+		onclick="buttonReport(this.id,this.name,this.value);">
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css" media="screen">
+		html{
+			background-color: black;
+			color: wheat;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	
+//crea el objeto Date
+var miFecha = new Date();
+//objeto fecha con sus 7 parametros
+//Date(year: int, month: int, date?: int, hours?: int, minutes?: int, seconds?: int, ms?: int)
+var miFecha7Param= new Date(2018, 11, 24, 10, 33, 30, 10);
+
+//6 parametros omiten los milisegundos
+var miFecha6Param= new Date(2018, 11, 24, 10, 33, 30);
+//5 parametros omiten los segundos
+var miFecha5Param= new Date(2018, 11, 24, 10, 33);
+//4 parametros omiten los minutos
+var miFecha4Param= new Date(2018, 11, 24, 10);
+//3 parametros omiten las horas
+var miFecha3Param= new Date(2018, 11, 24);
+//2 parametros omiten los dias
+var miFecha2Param= new Date(2018, 11, );
+//1 parametro no imprime el mes , solo los milisegundos
+var miFecha1Param= new Date(2018);
+
+document.write("Fecha Actual: "+miFecha);
+document.write("Fecha Con  7 parametros : "+miFecha7Param+"<br><br>");
+document.write("Fecha Con  6 parametros : "+miFecha6Param+"<br><br>");
+document.write("Fecha Con  5 parametros : "+miFecha5Param+"<br><br>");
+document.write("Fecha Con  4 parametros : "+miFecha4Param+"<br><br>");
+document.write("Fecha Con  3 parametros : "+miFecha3Param+"<br><br>");
+document.write("Fecha Con  2 parametros : "+miFecha2Param+"<br><br>");
+document.write("Fecha Con  1 parametros : "+miFecha1Param+"<br><br>");
+
+</script>
+</body>
+</html>

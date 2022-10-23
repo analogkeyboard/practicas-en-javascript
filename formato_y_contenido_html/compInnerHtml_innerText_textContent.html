@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Comparacion</title>
+</head>
+<body>
+	<div id="blog_test">
+Este elemento es <strong>strong</strong> y     tiene algo de super divertido <code>codigo</code>!
+	</div>
+	<script type="text/javascript">
+		const getValue=document.getElementById('blog_test');
+
+		//innerHTML
+		//devuelve la estructura html
+		var inner_html=getValue.innerHTML;
+		console.log(inner_html);
+
+		//innerText
+		//devuelve el texto sin formato
+		var inner_text=getValue.innerText;
+		console.log(inner_text);
+
+		//textContent
+		//devuelve el texto formateado
+		var text_content=getValue.textContent;
+		console.log(text_content);
+	</script>
+</body>
+</html>

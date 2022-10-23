@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejemplo textContent</title>
+	</head>
+	<body>
+		<p id="parrafo" >Parrafo con texto por default</p>
+		<button type="button" id="boton" >Click</button>
+		<script type="text/javascript">
+			
+			var parrafo=document.getElementById('parrafo');
+
+			var boton=document.getElementById('boton');
+			
+			boton.addEventListener("click",nuevoParrafo);
+			
+			function nuevoParrafo() {
+				// body...
+				parrafo.textContent="hola mundo";
+			}
+
+
+
+		</script>
+	</body>
+</html>

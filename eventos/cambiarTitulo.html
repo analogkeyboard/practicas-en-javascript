@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>titulo erroneo</title>
+</head>
+<body>
+<h1>Cambio de titulo con text box</h1>
+<label>Ingresa el nuevo titulo</label>
+<input type="text" id="tBox" value="">
+<button type="button" id="btn">Cambiar titulo</button>
+
+<script type="text/javascript">
+	var texto=document.getElementById("tBox");
+	var btn=document.getElementById("btn");
+btn.addEventListener("click",cTitulo);
+
+	function cTitulo() {
+		///alert(texto.value);
+		document.title=texto.value;
+		//alert(texto.value);
+	}
+</script>
+</body>
+</html>
